@@ -1,0 +1,40 @@
+-- Inserción de datos para la tabla campus
+INSERT INTO campus (code, register_date, name, description, place, status)
+VALUES
+    ('C001', '2024-01-15', 'Campus Central', 'Campus principal de la universidad', 'Av. Principal 123, Cañete', 'A'),
+    ('C002', '2024-03-20', 'Campus Norte', 'Campus en el norte de la ciudad', 'Av. Norte 456, Cañete', 'A');
+
+-- Inserción de datos para la tabla careers
+INSERT INTO careers (id, names, descriptions, durations, register_date, status)
+VALUES
+    (1, 'Ingeniería en Sistemas', 'Carrera enfocada en el desarrollo de software y tecnología de la información.', 5, '2024-01-10', 'A'),
+    (2, 'Medicina', 'Carrera dedicada a la formación de médicos generales con formación en ciencias de la salud.', 6, '2024-02-05', 'A'),
+    (3, 'Arquitectura', 'Carrera orientada al diseño y construcción de espacios habitables y públicos.', 5, '2024-02-15', 'A');
+
+-- Inserción de datos para la tabla course
+INSERT INTO course (code, names, credits, status)
+VALUES
+    ('CS101', 'Programación Java', 4, 'A'),
+    ('CS102', 'Estructuras de Datos', 4, 'A'),
+    ('MED101', 'Anatomía Humana', 5, 'A'),
+    ('ARC101', 'Historia de la Arquitectura', 3, 'A');
+
+-- Inserción de datos para la tabla seller
+INSERT INTO seller (code, names, last_names, email, birthday, place, salary, status)
+VALUES
+    ('S001', 'Juan', 'Pérez', 'juan.perez@gmail.com', '1990-06-12', 'San Luis', 3500.00, 'A'),
+    ('S002', 'María', 'Gómez', 'maria.gomez@yahoo.com', '1985-09-25', 'Imperial', 4000.00, 'A');
+
+-- Inserción de datos para la tabla student
+INSERT INTO student (id, names, last_names, email, register_date, birthday, status)
+VALUES
+    (1, 'Carlos', 'López', 'carlos.lopez@outlook.com', '2024-03-01', '2001-04-15', 'A'),
+    (2, 'Ana', 'Martínez', 'ana.martinez@gmail.com', '2024-03-05', '2002-07-20', 'A'),
+    (3, 'Kevin', 'Silva', 'kevin.silva@hotmail.com', '2024-03-10', '2003-07-15', 'A');
+
+-- Inserción de datos para la tabla teachers
+INSERT INTO teachers (id, register_date, names, last_names, specialty, phone, email, status)
+VALUES
+    (1, '2024-01-10', 'Luis', 'Manzo', 'Programación', '972362542', 'luis.manzi@hotmail.com', 'A'),
+    (2, '2024-02-15', 'Patricia', 'Ruiz', 'Medicina General', '936528450', 'patricia.ruiz@yahoo.com', 'A'),
+    (3, '2024-03-01', 'Jesus', 'Canales', 'Arquitectura', '924234590', 'jesus.canales@gmail.com', 'A');

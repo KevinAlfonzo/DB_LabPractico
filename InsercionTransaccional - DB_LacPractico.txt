@@ -1,0 +1,14 @@
+-- Inserción de datos para la tabla careers_detail
+INSERT INTO careers_detail (id, careers_id, course_code, teachers_id)
+VALUES
+    (1, 1, 'CS101', 1),  -- Carrera Ingeniería en Sistemas, curso Programación I, profesor Luis Fernández
+    (2, 1, 'CS102', 1),  -- Carrera Ingeniería en Sistemas, curso Estructuras de Datos, profesor Luis Fernández
+    (3, 2, 'MED101', 2),  -- Carrera Medicina, curso Anatomía Humana, profesora Patricia Ruiz
+    (4, 3, 'ARC101', 3);  -- Carrera Arquitectura, curso Historia de la Arquitectura, profesor Ricardo González
+
+-- Inserción de datos para la tabla enrollment
+INSERT INTO enrollment (id, register_date, student_id, seller_code, careers_id, campus_code, price, start_date, status)
+VALUES
+    (1, '2024-03-10', 1, 'S001', 1, 'C001', 1500.00, '2024-09-01', 'A'),
+    (2, '2024-03-12', 2, 'S002', 2, 'C002', 2000.00, '2024-09-01', 'A'),
+    (3, '2024-03-15', 3, 'S001', 3, 'C001', 1800.00, '2024-09-01', 'A');          

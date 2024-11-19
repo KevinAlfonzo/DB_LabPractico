@@ -1,7 +1,4 @@
--- Created by Vertabelo (http://vertabelo.com)
--- Last modification date: 2024-11-19 20:56:37.81
-
--- tables
+-- Tables
 -- Table: campus
 CREATE TABLE campus (
     code char(4)  NOT NULL,
@@ -94,7 +91,7 @@ CREATE TABLE teachers (
     CONSTRAINT teachers_pk PRIMARY KEY  (id)
 );
 
--- foreign keys
+-- Foreign keys
 -- Reference: careers_detail_careers (table: careers_detail)
 ALTER TABLE careers_detail ADD CONSTRAINT careers_detail_careers
     FOREIGN KEY (careers_id)
